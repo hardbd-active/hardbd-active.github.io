@@ -1,0 +1,637 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/TR/REC-html40"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>HardBD 2016 Keynote</title>
+<!--[if !mso]>
+
+
+<style>
+
+
+v\:*         { behavior: url(#default#VML) }
+
+
+o\:*         { behavior: url(#default#VML) }
+
+
+.shape       { behavior: url(#default#VML) }
+
+
+.auto-style4 {
+
+
+	font-size: medium;
+
+
+}
+
+
+.auto-style13 {
+
+
+	font-family: "Times New Roman", Times, serif;
+
+
+}
+
+
+.auto-style14 {
+
+
+	font-size: medium;
+
+
+	font-family: "Times New Roman", Times, serif;
+
+
+}
+
+
+.auto-style23 {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+
+
+	font-size: large;
+
+
+}
+
+
+.auto-style24 {
+
+
+	font-size: medium;
+
+
+	font-family: "Times New Roman", Times, serif;
+
+
+	margin-top: 18px;
+
+
+}
+
+
+.auto-style26 {
+
+
+	font-size: medium;
+
+
+	font-family: Arial, Helvetica, sans-serif;
+
+
+	color: #0000FF;
+
+
+}
+
+
+.auto-style27 {
+
+
+	font-family: "Times New Roman", Times, serif;
+
+
+	text-align: left;
+
+
+}
+
+
+.auto-style28 {
+
+
+	text-align: left;
+
+
+}
+
+
+.auto-style30 {
+
+
+	color: #FF0000;
+
+
+}
+
+
+.auto-style32 {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.auto-style33 {
+
+
+	font-size: medium;
+
+
+	font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.auto-style34 {
+
+
+	font-size: medium;
+
+
+	font-family: Arial, Helvetica, sans-serif;
+
+
+	margin-top: 18px;
+
+
+}
+
+
+.auto-style36 {
+
+
+	font-weight: normal;
+
+
+}
+
+
+.auto-style47 {
+
+
+	text-align: center;
+
+
+	border: 0 solid #FFFFFF;
+
+
+}
+
+
+.auto-style48 {
+
+
+	vertical-align: middle;
+
+
+}
+
+
+.auto-style49 {
+
+
+	border: 1px solid #FFFFFF;
+
+
+}
+
+
+.auto-style50 {
+
+
+	font-size: medium;
+
+
+	font-family: Arial, Helvetica, sans-serif;
+
+
+	text-align: left;
+
+
+	line-height: 150%;
+
+
+	margin-bottom: 24px;
+
+
+}
+
+
+</style>
+
+
+<![endif]--><!--[if gte mso 9]>
+
+
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+
+
+</xml><![endif]-->
+</head>
+<body>
+<div align="center"> <a name="description"></a>
+<table style="height: 1500px; width: 1176px;" class="auto-style49"
+ cellpadding="0" cellspacing="0">
+<!-- MSTableType="layout" --> <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 222px; height: 200px;">
+      <p align="center"> <img style="width: 205px; height: 79px;"
+ class="auto-style32" src="logo.jpg" alt="HardBD 2016"></p>
+      </td>
+      <td colspan="1" rowspan="15" style="height: 200px;"
+ class="auto-style28" valign="top">
+      <p class="auto-style50"><font class="auto-style4"><span><span
+ class="auto-style30"><strong></strong>
+      <p class="auto-style50"><strong></strong></p>
+      </span></span></font></p>
+      <table style="text-align: left; width: 600px;" border="0"
+ cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><big
+                style="font-weight: bold;"><big>HyPer Beyond Software: Exploiting Modern Hardware for Main-Memory Database Systems
+                            </big></big><br>
+            <br>
+            <big style="font-weight: bold;">Alfons Kemper<br>
+Technische Universität München </big><br>
+            <br>
+            <img style="width: 225px; height: 336px;"
+ alt="keynote speaker" src="kemper.jpg"><br>
+            <br>
+
+In this presentation, we survey the use of advanced hard-ware features for
+optimizing main-memory database systems in the context of our HyPer project.
+The access behavior of database objects from simultaneous OLTP transactions is
+monitored using the virtual memory management component in order to compact the
+database into hot and cold partitions. The cold partitions are stored in
+compressed data blocks. Decompression is expedited by vectorized SIMD scan
+processing. Utilizing many-core NUMA-organized database servers is facilitated
+by the morsel-driven adaptive parallelization and partitioning that guarantees
+data locality w.r.t. the processing core. The most recent Hardware
+Transactional Memory support of, e.g., Intel’s Haswell processor, can be used
+as the basis for a lock-free concurrency control scheme for OLTP transactions.
+Finally, we show how heterogeneous processors of “wimpy” devices such as
+tablets can be utilized for high-performance and energy-efficient query
+processing. 
+
+<br><br>
+
+This is joint work with my colleague Thomas Neumann at TUM and the HyPer team
+(<a href="hyper-db.com">hyper-db.com</a>).
+
+<br>
+            <br>
+            <span style="font-weight: bold;">Bio:</span> 
+
+Alfons Kemper's research field is database systems engineering. He explores
+ways to optimize information systems for operational and scientific
+applications as a way to combat the data explosion. His main areas of interest
+are optimization concepts for distributed information structures, data
+integration methods and, in particular, main memory-based database systems.
+Together with his colleague Thomas Neumann he leads the HyPer main-memory
+database project (hyper-db.com) at Technische Universität München. HyPer is one
+of the first hybrid database systems that offer high-performance OLTP as well
+as OLAP in parallel on the same database state.
+
+<br><br>
+After studying computer science at the University of Dortmund from 1977 to
+1980, he moved to the University of Southern California, Los Angeles. While
+there, he obtained his Master of Science and doctorate. Upon his return to
+Germany, he completed his lecturer qualification at the University of
+Karlsruhe. His first professorship was conferred by RWTH Aachen. After many
+years as Director of the Chair of Database Systems at the University of Passau,
+TUM offered him a position in 2004. From 2006 to 2010, he was Dean of the
+Department of Informatics at TUM. His textbook on database systems, published
+by deGruyter and now in its 10th edition, is a best-seller in German-speaking
+countries and is used in most universities and colleges.
+<br>
+            <br>
+            <div style="text-align: right;"><font class="auto-style33"><span
+ class="auto-style4"><strong class="auto-style36">[ </strong> </span>
+            <a href="index.html#top"> <span class="auto-style4"><strong
+ class="auto-style36">Go Back</strong></span></a><span
+ class="auto-style4"><strong class="auto-style36"> ]</strong></span></font><br>
+            </div>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="1" style="width: 222px;" valign="top"><!-- MSCellType="NavBody" --><!--msimagelist-->
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!--msimagelist--><tbody>
+          <tr>
+<!--msimagelist--><td valign="baseline" width="42"> <img alt="bullet"
+ src="bullet.gif" height="15" hspace="13" width="15"></td>
+            <td valign="top" width="100%">
+            <p align="left"> <font class="auto-style4"> <a
+ href="index.html#description"><span class="auto-style32"> <strong
+ class="auto-style36">Description</strong></span></a><span
+ class="auto-style32"><strong class="auto-style36"><br>
+            </strong></span></font><span class="auto-style32"> <font
+ class="auto-style4"> <strong class="auto-style36">　</strong></font></span><!--msimagelist--></p>
+            </td>
+          </tr>
+<!--msimagelist--><tr>
+<!--msimagelist--><td valign="baseline" width="42"> <img alt="bullet"
+ src="bullet.gif" height="15" hspace="13" width="15"></td>
+            <td valign="top" width="100%">
+            <p align="left"> <font class="auto-style4"> <a
+ href="index.html#topics"><span class="auto-style32"> <strong
+ class="auto-style36">Topics</strong></span></a><span
+ class="auto-style32"><strong class="auto-style36"><br>
+            </strong></span></font><span class="auto-style32"> <font
+ class="auto-style4"> <strong class="auto-style36">　</strong></font></span><!--msimagelist--></p>
+            </td>
+          </tr>
+<!--msimagelist--><tr>
+<!--msimagelist--><td valign="baseline" width="42"> <img alt="bullet"
+ src="bullet.gif" height="15" hspace="13" width="15"></td>
+            <td valign="top" width="100%">
+            <p align="left"> <font class="auto-style4"> <a
+ href="index.html#submissions"><span class="auto-style32"> <strong
+ class="auto-style36">Submission</strong></span></a><span
+ class="auto-style32"><strong class="auto-style36"><br>
+            </strong></span></font><span class="auto-style32"> <font
+ class="auto-style4"> <strong class="auto-style36">　</strong></font></span><!--msimagelist--></p>
+            </td>
+          </tr>
+<!--msimagelist--><tr>
+<!--msimagelist--><td valign="baseline" width="42"> <img alt="bullet"
+ src="bullet.gif" height="15" hspace="13" width="15"></td>
+            <td valign="top" width="100%">
+            <p align="left"> <font class="auto-style4"> <a
+ href="index.html#dates"><span class="auto-style32"> <strong
+ class="auto-style36">Important
+Dates</strong></span></a><span class="auto-style32"><strong
+ class="auto-style36"><br>
+            </strong></span></font><span class="auto-style32"> <font
+ class="auto-style4"> <strong class="auto-style36">　</strong></font></span><!--msimagelist--></p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="baseline" width="42"> <img alt="bullet"
+ src="bullet.gif" height="15" hspace="13" width="15"></td>
+            <td valign="top" width="100%">
+            <p align="left"> <font class="auto-style4"> <a
+ href="index.html#program"><span class="auto-style32"> <strong
+ class="auto-style36">Program</strong></span></a><span
+ class="auto-style32"><strong class="auto-style36"><br>
+            </strong></span></font><span class="auto-style32"> <font
+ class="auto-style4"> <strong class="auto-style36">　</strong></font></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="baseline" width="42"> <img
+ style="width: 15px; height: 15px;" alt="bullet" src="bullet.gif"
+ hspace="13"></td>
+            <td valign="top" width="100%">
+            <p align="left"> <font class="auto-style4"> <a
+ href="keynote.html"><span class="auto-style32"> <strong
+ class="auto-style36">Keynote</strong></span></a><br>
+            <br>
+            <span class="auto-style32"><strong class="auto-style36"> </strong></span></font><span
+ class="auto-style32"> <font class="auto-style4"> <strong
+ class="auto-style36"></strong></font></span></p>
+            </td>
+          </tr>
+          <tr>
+<!--msimagelist--><td valign="baseline" width="42"> <img alt="bullet"
+ src="bullet.gif" height="15" hspace="13" width="15"></td>
+            <td valign="top" width="100%">
+            <p align="left"> <font class="auto-style4"> <a
+ href="index.html#organizer"><span class="auto-style32"> <strong
+ class="auto-style36">Organizers</strong></span></a><span
+ class="auto-style32"><strong class="auto-style36"><br>
+            </strong></span></font><span class="auto-style32"> <font
+ class="auto-style4"> <strong class="auto-style36">　</strong></font></span><!--msimagelist--></p>
+            </td>
+          </tr>
+          <tr>
+<!--msimagelist--><td valign="baseline" width="42"> <img alt="bullet"
+ src="bullet.gif" height="15" hspace="13" width="15"></td>
+            <td valign="top" width="100%">
+            <p class="auto-style32" align="left"> <font
+ class="auto-style4"> <a href="index.html#pc"><strong
+ class="auto-style36">PC
+Members<br>
+            </strong></a></font><!--msimagelist--></p>
+            </td>
+          </tr>
+<!--msimagelist-->
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+<!--<tr>
+
+
+			<td valign="top" bgcolor="#0000FF" height="39">
+
+
+			<!-- MSCellType="ContentBody" -->
+<!--<p class="auto-style4">
+
+
+			<font color="#FFFFFF" size="4" class="auto-style32">
+
+
+			&nbsp; 
+
+
+			<a name="accepted"></a>
+
+
+			<img border="0" src="article.gif" width="32" height="32"></font><span class="auto-style32"><font color="#FFFFFF" size="5"><strong class="auto-style36">Accepted Papers</strong></font></span></td>
+
+
+		</tr>
+
+
+		<tr>
+
+
+			<td align="left" valign="top" height="96">
+
+
+			<span class="auto-style4"><br class="auto-style32"></span>
+
+
+			<span class="auto-style33">[1]&nbsp; Zhijie Feng, Zhiyong Feng, Xin 
+
+
+			Wang, Guozheng Rao, Yazhou Wei and Zhiyuan Li. HDStore: An SSD/HDD 
+
+
+			Hybrid Distributed Storage Scheme for Large-Scale Data<br>[2]&nbsp; 
+
+
+			Yi Ou, Jianliang Xu and Theo Haerder. Wear-Aware Algorithms for 
+
+
+			PCM-Based Database Buffer Pools<br>[3]&nbsp; Zheng Huanxin and Wu 
+
+
+			Junmin. Accelerate K-means Algorithm by using GPU in the Hadoop 
+
+
+			Framework<br>[4]&nbsp; Dongmei Huang, Le Sun and Danfeng Zhao. An 
+
+
+			Efficient Hybrid Index Structure for Temporal Marine Data<br>[5]&nbsp; 
+
+
+			Xiaolan Xie and Zhuang Xiong. On Massive Spatial Data Retrieval 
+
+
+			Based on Spark<br></span>
+
+
+			<p align="right" style="margin-top: 0; margin-bottom: 0">
+
+
+			<font class="auto-style32"><span class="auto-style4">[ </span> <a href="#top">
+
+
+			<span class="auto-style4">Go to Top</span></a><span class="auto-style4"> ]</span></font></td>
+
+
+		</tr>
+
+
+		<tr>
+
+
+			<td valign="top" bgcolor="#0000FF" height="43">
+
+
+			<!-- MSCellType="ContentBody" --><!--<p class="auto-style4">
+
+
+			<font color="#FFFFFF" size="4" class="auto-style32">
+
+
+			&nbsp; 
+
+
+			<a name="program"></a>
+
+
+			<img border="0" src="article.gif" width="32" height="32"></font><span class="auto-style32"><font color="#FFFFFF" size="5"><strong class="auto-style36">Program</strong></font></span></td>
+
+
+		</tr>
+
+
+		<tr>
+
+
+			<td valign="top" height="61" class="auto-style47">
+
+
+			<span class="auto-style4">
+
+
+			<span class="auto-style32">
+
+
+			<!-- MSCellType="ContentBody" --><!--</span></span><img alt="" class="auto-style48" src="img10.gif"><font class="auto-style32"><span class="auto-style4"><br><p align="right">
+
+
+			[ <a href="#top">
+
+
+			Go to Top</a> ]</span></font></td>
+
+
+		</tr>--><!--<tr>
+
+
+			<td valign="top" bgcolor="#0000FF" style="height: 40px">
+
+
+			<!-- MSCellType="ContentBody" -->
+<!--<p class="auto-style4">
+
+
+			<!--<font color="#FFFFFF" size="4" class="auto-style32">
+
+
+			&nbsp; 
+
+
+			<a name="registration"></a>
+
+
+			<!--<img border="0" src="article.gif" width="32" height="32"></font><span class="auto-style32"><font color="#FFFFFF" size="5"><strong class="auto-style36">Registration</strong></font></span></td>
+
+
+		</tr>
+
+
+		<tr>
+
+
+			<td valign="top" height="61">
+
+
+			<span class="auto-style4">
+
+
+			<span class="auto-style32">
+
+
+			<!-- MSCellType="ContentBody" --><!--<br>There is no seperated registration for workshops at WAIM'14. 
+
+
+			Please refer to the
+
+
+			<a href="http://www.cis.umac.mo/waim2014/registration/">registration 
+
+
+			page</a> of WAIM'14 to find the detailed instructions.</span></span><p align="right">
+
+
+			<font class="auto-style32"><span class="auto-style4">[ </span> <a href="#top">
+
+
+			<span class="auto-style4">Go to Top</span></a><span class="auto-style4"> ]</span></font></td>
+
+
+		</tr>-->
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>
